@@ -5,3 +5,4 @@ This repository creates a matrix class and defines a number of operations on thi
 ## Operations
 - determinant
 - RREF
+- EROs
