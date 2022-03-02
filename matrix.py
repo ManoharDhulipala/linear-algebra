@@ -1,20 +1,25 @@
 class Matrix:
-    def __init__(self, rows, cols): ## creates empty matrix of given size
-        self.rows = rows
-        self.cols = cols
-        self.matrix = [[0]*cols]*rows # creates empty 2d array of appropriate size
+    def __init__(self, size): ## creates empty matrix of given size
+        self.size = size
+        self.matrix = [[0]*size]*size # creates empty 2d array of appropriate size
 
     def new(matrix): # expects a 2d array as input, creates a matrix object
-        rows = len(matrix)
-        cols = len(matrix[0])
-        m = Matrix(rows, cols)
+        size = len(matrix)
+        m = Matrix(size)
         m.matrix = matrix
         return m
 
     def print(self):
-        for i in self.matrix:
-            print(i)
+        for row in self.matrix:
+            print(row)
 
+
+    # returns the matrix when the minors at x, y are removed
+    def minors(self, x, y):
+      
+      
+    def det(self):
+      
 
 m1 = Matrix(2,3)
 
